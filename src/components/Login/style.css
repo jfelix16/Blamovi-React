@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --azul: #060821;
+    --rosa: #C12D6D;
+    --branco: #ffffff;
+    --font1: 'Titillium Web', sans-serif;
+    --font2: 'Righteous', cursive;
+    --font3:
+
+    /*AQUI COMEÇA FORMULARIO*/
+
+    #form{
+
+    }
+
+    /* esconde as ancoras da tela */
+a.links {
+  display: none;
+}
+
+/* content que contem os formulários */
+.content {
+  width: 750px;
+  margin: 0px auto;
+ }
+
+/* formatando o cabeçalho dos formulários */
+
+h1 {
+  font-size: 48px;
+  color: #fff;
+  padding: 10px 0;
+  font-family: var(--font1);
+  font-weight: bold;
+  font-family: var(--font1);
+  text-align: center;
+  padding-bottom: 30px;
+  margin-top: 15px;
+}
+
+
+p {
+  margin-bottom: 15px;
+  font-family: var(--font1);
+}
+
+p:first-child {
+  margin: 10px;
+}
+
+  label{
+    color: #fff;
+    font-family: var(--font1);
+    font-size: 20px;
+  } 
+   
+.input {
+  outline: none;
+}
+
+input:not([type="checkbox"]) {
+  width: 95%;
+  margin-top: 4px;
+  padding: 10px;
+  border: 1px solid #b2b2b2;
+font-size: 20px;
+font-weight: bold;
+font-family: var(--font1);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+  box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+
+input:hover {
+  background: #4ab3c6;
+}
+
+/*marcando os links para mudar de um formulário para outro */
+.link {
+  color: #7f7c7c;
+  height: 20px;
+  width: 440px;
+  padding: 17px 30px 20px 30px;
+  font-size: 16px;
+  text-align: right;
+  border-top: 1px solid #dbe5e8;
+  -webkit-border-radius: 0 0 5px 5px;
+}
+
+.link a,
+.link2 a {
+  font-weight: bold;
+  padding: 10px;
+  color: #FBC02C;
+  margin-left: 10px;
+  -webkit-border-radius: 4px;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  text-decoration: solid;
+  font-family: var(--font1);
+  font-size: 18px;
+}
+
+.link a:hover {
+  color: #39bfd7;
+  background: #f7f7f7;
+  border: 1px solid #4ab3c6;
+}
+
+/* estilos para para ambos os formulários */
+
+#cadastro,
+#login {
+
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 1px solid #FFF;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 20px 20px 40px 0px rgba(0, 0, 0, 0.70);
+  backdrop-filter: blur(20px);
+  margin: 80px;
+  top: 0px;
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(147, 184, 189, 0.8);
+  -webkit-box-shadow: 5px;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+
+
+.input {
+  display: flex;
+  width: 500px;
+  margin: 10px;
+  align-items: flex-end;
+}
+
+.contato {
+  display: flex;
+}
+
+.imagem img {
+  width: 40px;
+  height: 40px;
+}
+
+.input-nome {
+  width: 90%;
+  max-width: 650px;
+  border-radius: 10px;
+}
+
+.input-email {
+  width: 90%;
+  max-width: 650px;
+}
+
+.input-senha {
+  width: 90%;
+  max-width: 650px;
+}
+
+.input-conf-senha {
+  width: 90%;
+  max-width: 650px;
+}
+
+.input-user {
+  width: 90%;
+  max-width: 650px;
+}
+
+.input-foto {
+  width: 90%;
+  max-width: 650px;
+}
+
+.input-submit {
+  width: 90%;
+  max-width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+
+}
+
+.btnBusca {
+  background: #FBC02C;
+  /* color: ; */
+}
+
+.form-label {
+  width: 56px;
+  height: 46px;
+}
+
+    /* CSS reset */
+*,*:before,*:after {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    margin: 10px;
+  }
+  /*AQUI termina FORMULARIO*/
+
+  /* RESPONSIVIDADE */
+@media screen and (max-width: 1365px) {
+    h1 {
+      /* display: none; */
+      font-size: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .card {}
+  
+    .poster>img {}
+  
+    .hamburguer {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 360px) {
+    .menu ul a {
+      display: none;
+    }
+  
+    #divbusca {
+      display: none;
+    }
+  
+    .hamburguer {
+      display: initial;
+    }
+  }

@@ -1,0 +1,45 @@
+form textarea {
+    resize: none;
+    width: 480px;
+    height: 350px;
+    border: double #000 5px;
+    border-radius: 20px; 
+  
+  }
+  
+  input[type=text]:focus {
+    background-color: lightblue;
+  }
+  
+  form select{
+    width: 421px;
+    /* max-width: 650px; */
+  
+    height: 53px;
+    border: solid double #000;
+    border-radius: 10px;
+    margin: 10px;
+    
+  }
+/* RESPONSIVIDADE */
+@media screen and (max-width: 1365px) {
+    h1 {
+      /* display: none; */
+      font-size: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .card {}
+  
+    .poster>img {}
+  
+    .hamburguer {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 360px) {
+    .menu ul a {
+      display: none;
+    }  

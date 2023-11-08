@@ -1,0 +1,147 @@
+#header {
+    background-color: var(--preto);
+    height: 70px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header .posicionamento {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+#header .posicionamento_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header .posicionamento_header img {
+    width: 45px;
+}
+
+#header .posicionamento_header>span {
+    padding-left: 10px;
+}
+
+#header .logo>img {
+    color: var(--amarelo);
+}
+
+#header .logo {
+    display: flex;
+    align-items: center;
+    color: var(--amarelo);
+    width: 20px;
+    height: 27px;
+    gap: 5px;
+}
+
+#header .logo>span {
+    color: var(--amarelo);
+}
+
+#header .menu_barras {
+    display: none;
+}
+
+#header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+}
+
+#header a {
+    color: var(--amarelo);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: var(--font1);
+    font-size: 18px;
+}
+
+#header a:hover {
+    color: var(--vermelho);
+}
+
+/* barra de pesquisa */
+
+#divBusca {
+    background-color: #E0EEEE;
+    border: solid 2px #fdf9f900;
+    border-radius: 10px;
+    width: 320px;
+    height: 31px;
+
+}
+
+#txtBusca {
+    float: left;
+    background-color: transparent;
+    padding-left: 5px;
+    font-size: 20px;
+    border: none;
+    height: 27px;
+    width: 243px;
+    border-radius: 8px;
+}
+
+#btnBusca {
+    border: none;
+    float: right;
+    height: 28px;
+    border-radius: 7px;
+    width: 70px;
+    font-weight: bold;
+    background: #FBC02C;
+}
+
+#divBusca img {
+    float: left;
+}
+
+@media screen and (max-width: 1200px) {
+    .servicos>div>div:nth-child(2) {
+        margin-top: 100px;
+    }
+
+    .menu_barras {
+        display: initial;
+    }
+
+    .menu_barras svg {
+        height: 50px;
+        fill: var(--branco);
+    }
+
+    .posicionamento_header {
+        position: relative;
+    }
+
+    .posicionamento_header nav {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 80px;
+        background-color: #060821c3;
+        flex-direction: column;
+        z-index: 1;
+        padding: 5%;
+        backdrop-filter: blur(10px);
+        border-radius: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.8);
+    }
+
+    header nav a {
+        margin: 30px 0;
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header nav{
+        width: 260px;
+    }
+}
